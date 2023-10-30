@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+body {
+	scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+	display: none;
+}
+.main {
+	height: 100vh;
+	scrollbar-width: none;
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
+	overflow-y: auto;
+}
+.main::-webkit-scrollbar {
+	display: none;
+}
+.main > * {
+	scroll-snap-align: center;
+	height: 100vh;
+}
+.header {
+	background-image: url(./assets/img/nightCity.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+}
