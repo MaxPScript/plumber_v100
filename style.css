@@ -1,8 +1,18 @@
+:root {
+	--font-size-1: clamp(2rem, 1.7993rem + 0.8451vw, 2.75rem);
+	--font-size-2: clamp(1.8rem, 1.6261rem + 0.7324vw, 2.45rem);
+	--font-size-3: clamp(1.6rem, 1.4662rem + 0.5634vw, 2.1rem);
+	--font-size-4: clamp(1.4rem, 1.293rem + 0.4507vw, 1.8rem);
+	--font-size-5: clamp(1.2rem, 1.1331rem + 0.2817vw, 1.45rem);
+	--font-size-6: clamp(0.9rem, 0.8732rem + 0.1127vw, 1rem);
+	--font-size-body: clamp(1rem, 0.9599rem + 0.169vw, 1.15rem);
+}
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Roboto", sans-serif;
+	color: #469be0;
 }
 body {
 	scrollbar-width: none;
@@ -30,4 +40,58 @@ body::-webkit-scrollbar {
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 100vh;
+
+	/* display: flex; */
+	/* display: grid; */
+	padding: 2rem;
+}
+.header > section {
+	/* flex: 1; */
+}
+.header .header__left {
+	/* flex-basis: 65%; */
+}
+.header__left,
+.header__right {
+	/* padding: 8rem 4rem; */
+	/* display: grid; */
+}
+.header__left {
+	width: min-content;
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: 30% 70%;
+	grid-template-columns: 30% min-content;
+	/* position: relative; */
+	/* margin: 1rem 1rem 0 1rem; */
+
+	padding: 2rem;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(0, 0, 70, 0.2);
+	backdrop-filter: blur(2px);
+	box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.3);
+}
+.header__left h1 {
+	font-size: 2rem;
+	font-size: var(--font-size-1);
+	margin-bottom: 1rem;
+}
+.header__left h1,
+h2 {
+	color: white;
+}
+.header__left img {
+	width: 100%;
+	/* float: left;
+	max-width: 25%;
+	margin-right: 1rem; */
+	/* position: absolute; */
+	/* right: 10%; */
+	/* bottom: 10%; */
+	/* width: 25%; */
+}
+.header__right--pipesImage {
+	padding: 2rem;
+	overflow: hidden;
 }
