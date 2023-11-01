@@ -8,6 +8,10 @@
 	--font-size-body: clamp(1rem, 0.9599rem + 0.169vw, 1.15rem);
 
 	--height-svh: 100svh;
+	--height-svh: 100dvh;
+	font-size: calc(15px + 0.390625vw);
+	font-size: calc(14px + 0.390625vw);
+	font-size: calc(10px + 0.790625vw);
 }
 * {
 	margin: 0;
@@ -23,6 +27,8 @@ body::-webkit-scrollbar {
 	display: none;
 }
 .main {
+	max-width: 1400px;
+	margin: auto;
 	height: var(--height-svh);
 	scrollbar-width: none;
 	scroll-snap-type: y mandatory;
@@ -60,10 +66,16 @@ body::-webkit-scrollbar {
 }
 .header__left {
 	width: min-content;
+	width: 65%;
+	width: fit-content;
+	margin-right: 30%;
 	display: grid;
 	gap: 1rem;
 	grid-template-columns: 30% 70%;
 	grid-template-columns: 30% min-content;
+
+	display: flex;
+	flex-wrap: wrap;
 	/* position: relative; */
 	/* margin: 1rem 1rem 0 1rem; */
 
@@ -72,19 +84,39 @@ body::-webkit-scrollbar {
 	background-color: rgba(255, 255, 255, 0.2);
 	background-color: rgba(0, 0, 70, 0.2);
 	backdrop-filter: blur(2px);
-	box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.3);
+	box-shadow: 2px 2px 1px rgba(255, 255, 255, 0.3),
+		inset 2px 2px 1px rgba(0, 0, 0, 0.3);
+
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	box-shadow: 2px 2px 1px rgba(255, 255, 255, 0.3),
+		inset 2px 2px 30px rgba(0, 0, 70, 0.2);
 }
+
+.header__left > div:has(h1::hover) .header__left--pipesImage {
+	width: 50%;
+}
+
 .header__left h1 {
 	font-size: 2rem;
-	font-size: var(--font-size-1);
+	/* font-size: var(--font-size-1); */
+	font-size: 1.8rem;
 	margin-bottom: 1rem;
 }
 .header__left h1,
-h2 {
+h2,
+h3 {
 	color: white;
 }
+.header__left h2 {
+	grid-column: span 2;
+	font-size: 1.5rem;
+}
 .header__left img {
-	width: 100%;
+	/* display: block; */
+	/* width: 30%; */
+	/* aspect-ratio: 1/1; */
+	/* border-radius: 50%; */
+	/* height: 30%; */
 	/* float: left;
 	max-width: 25%;
 	margin-right: 1rem; */
@@ -93,7 +125,13 @@ h2 {
 	/* bottom: 10%; */
 	/* width: 25%; */
 }
-.header__right--pipesImage {
-	padding: 2rem;
-	overflow: hidden;
+.header__left--pipesImage {
+	width: 80%;
+	background: url(./assets/img/plumbing_pipes_with_gold_clamps_in_steel_blue_st.jpg);
+	background-size: cover;
+	/* padding: 2rem; */
+	/* overflow: hidden; */
+	border-radius: 0.5rem;
+	filter: drop-shadow(1px 2px 3px hsl(209deg 20% 50% / 0.5));
+	filter: drop-shadow(2px 3px 4px hsl(209deg 50% 10% / 0.7));
 }
