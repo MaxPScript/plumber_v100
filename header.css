@@ -18,7 +18,8 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Roboto", sans-serif;
-	color: #469be0;
+	/* color: #469be0; */
+	color: white;
 }
 body {
 	scrollbar-width: none;
@@ -51,7 +52,7 @@ body::-webkit-scrollbar {
 
 	/* display: flex; */
 	/* display: grid; */
-	padding: 2rem;
+	padding: 3rem;
 }
 .header > section {
 	/* flex: 1; */
@@ -84,27 +85,67 @@ body::-webkit-scrollbar {
 	background-color: rgba(255, 255, 255, 0.2);
 	background-color: rgba(0, 0, 70, 0.2);
 	backdrop-filter: blur(2px);
-	box-shadow: 2px 2px 1px rgba(255, 255, 255, 0.3),
-		inset 2px 2px 1px rgba(0, 0, 0, 0.3);
+	/* box-shadow: 2px 2px 1px rgba(255, 255, 255, 0.3),
+		inset 2px 2px 1px rgba(0, 0, 0, 0.3); */
 
 	border: 1px solid rgba(255, 255, 255, 0.25);
-	box-shadow: 2px 2px 1px rgba(255, 255, 255, 0.3),
-		inset 2px 2px 30px rgba(0, 0, 70, 0.2);
+
+	/* box-shadow: 2px 2px 1px 0px hsl(210deg 20% 100% / 0.6),
+		inset 2px 2px 400px hsl(200deg 50% 0% / 0.5); */
+	box-shadow: 1px 1px 0px 0px hsl(210deg 50% 85% / 0.2),
+		2px 2px 2px 2px hsl(200deg 70% 30% / 0.6),
+		inset 2px 2px 400px hsl(200deg 50% 0% / 0.5);
 }
 
 .header__left > div:has(h1::hover) .header__left--pipesImage {
-	width: 50%;
+	/* width: 50%; */
 }
 
 .header__left h1 {
+	cursor: pointer;
 	font-size: 2rem;
 	/* font-size: var(--font-size-1); */
 	font-size: 1.8rem;
 	margin-bottom: 1rem;
+	position: relative;
 }
-.header__left h1,
-h2,
-h3 {
+.header__left h1::after {
+	content: "Я, Дмитрий \2014 профессиональный мастер-сантехник.";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	color: gold;
+	opacity: 0;
+}
+.header__left h1:hover {
+	/* color: gold; */
+}
+
+.hover:has(h1:hover) h1::after {
+	/* .header__left h1 */
+	animation: h11 0.6s linear both;
+	-webkit-animation: h11 0.3s linear both;
+}
+@keyframes h11 {
+	0% {
+		/* width: 0%; */
+	}
+
+	50% {
+		/* width: 100%; */
+		opacity: 1;
+	}
+	75% {
+		/* opacity: 0; */
+	}
+	100% {
+		/* width: 100%; */
+		opacity: 0;
+	}
+}
+.header__left {
 	color: white;
 }
 .header__left h2 {
@@ -134,4 +175,48 @@ h3 {
 	border-radius: 0.5rem;
 	filter: drop-shadow(1px 2px 3px hsl(209deg 20% 50% / 0.5));
 	filter: drop-shadow(2px 3px 4px hsl(209deg 50% 10% / 0.7));
+	position: relative;
+}
+.header__left--pipesImage::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: url(./assets/img/sparkles_1.jpg);
+	background-size: cover;
+	opacity: 0;
+	animation: sparkles 3s infinite;
+}
+@keyframes sparkles {
+	50% {
+	}
+	50% {
+		opacity: 1;
+	}
+	50% {
+	}
+}
+.header__callLink {
+	/* text-decoration: none; */
+	/* color: white; */
+	/* font-weight: bold; */
+	padding: 1rem;
+	display: block;
+	border: 2px solid greenyellow;
+	border-radius: 50%;
+	width: fit-content;
+	aspect-ratio: 1/1;
+	display: grid;
+	place-content: center;
+}
+.header__callLink > a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	/* padding: 1rem; */
+	/* display: block; */
+	/* border: 2px solid greenyellow; */
+	/* width: fit-content; */
 }
