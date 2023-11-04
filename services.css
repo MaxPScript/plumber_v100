@@ -1,8 +1,9 @@
 .services {
-	background: hsl(228, 65%, 9%);
 	background: hsl(209, 53%, 25%);
+	background: hsl(228, 65%, 9%);
 	display: grid;
 	place-content: center;
+	padding-top: 1rem;
 }
 .services h2 {
 	margin-bottom: 1rem;

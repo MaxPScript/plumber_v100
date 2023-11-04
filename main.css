@@ -1,0 +1,44 @@
+:root {
+	--font-size-1: clamp(2rem, 1.7993rem + 0.8451vw, 2.75rem);
+	--font-size-2: clamp(1.8rem, 1.6261rem + 0.7324vw, 2.45rem);
+	--font-size-3: clamp(1.6rem, 1.4662rem + 0.5634vw, 2.1rem);
+	--font-size-4: clamp(1.4rem, 1.293rem + 0.4507vw, 1.8rem);
+	--font-size-5: clamp(1.2rem, 1.1331rem + 0.2817vw, 1.45rem);
+	--font-size-6: clamp(0.9rem, 0.8732rem + 0.1127vw, 1rem);
+	--font-size-body: clamp(1rem, 0.9599rem + 0.169vw, 1.15rem);
+
+	--height-svh: 100svh;
+	--height-svh: 100dvh;
+	font-size: calc(15px + 0.390625vw);
+	font-size: calc(14px + 0.390625vw);
+	font-size: calc(10px + 1vw);
+	background: hsl(210 100% 3% / 1);
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+	/* color: #469be0; */
+	color: white;
+	color: greenyellow;
+}
+body {
+	/* scrollbar-width: none; */
+}
+body::-webkit-scrollbar {
+	/* display: none; */
+}
+.main {
+	max-width: 1400px;
+	margin: auto;
+	/* height: var(--height-svh); */
+	/* height: 100vh; */
+	/* scrollbar-width: none; */
+	/* scroll-snap-type: y mandatory; */
+	/* scroll-behavior: smooth; */
+	/* overflow-y: auto; */
+}
+.main::-webkit-scrollbar {
+	/* display: none; */
+}

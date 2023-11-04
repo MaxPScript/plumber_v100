@@ -1,55 +1,10 @@
-:root {
-	--font-size-1: clamp(2rem, 1.7993rem + 0.8451vw, 2.75rem);
-	--font-size-2: clamp(1.8rem, 1.6261rem + 0.7324vw, 2.45rem);
-	--font-size-3: clamp(1.6rem, 1.4662rem + 0.5634vw, 2.1rem);
-	--font-size-4: clamp(1.4rem, 1.293rem + 0.4507vw, 1.8rem);
-	--font-size-5: clamp(1.2rem, 1.1331rem + 0.2817vw, 1.45rem);
-	--font-size-6: clamp(0.9rem, 0.8732rem + 0.1127vw, 1rem);
-	--font-size-body: clamp(1rem, 0.9599rem + 0.169vw, 1.15rem);
-
-	--height-svh: 100svh;
-	--height-svh: 100dvh;
-	font-size: calc(15px + 0.390625vw);
-	font-size: calc(14px + 0.390625vw);
-	font-size: calc(10px + 0.790625vw);
-}
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Roboto", sans-serif;
-	/* color: #469be0; */
-	color: white;
-}
-body {
-	scrollbar-width: none;
-}
-body::-webkit-scrollbar {
-	display: none;
-}
-.main {
-	max-width: 1400px;
-	margin: auto;
-	height: var(--height-svh);
-	scrollbar-width: none;
-	scroll-snap-type: y mandatory;
-	scroll-behavior: smooth;
-	overflow-y: auto;
-}
-.main::-webkit-scrollbar {
-	display: none;
-}
-.main > * {
-	scroll-snap-align: center;
-	height: var(--height-svh);
-}
 .header {
 	background-image: url(./assets/img/nightCity.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	height: var(--height-svh);
-
+	/* height: var(--height-svh); */
+	height: 100vh;
 	/* display: flex; */
 	/* display: grid; */
 	padding: 3rem;
@@ -92,9 +47,10 @@ body::-webkit-scrollbar {
 
 	/* box-shadow: 2px 2px 1px 0px hsl(210deg 20% 100% / 0.6),
 		inset 2px 2px 400px hsl(200deg 50% 0% / 0.5); */
-	box-shadow: 1px 1px 0px 0px hsl(210deg 50% 85% / 0.2),
+	box-shadow: inset 2px 2px 400px hsl(200deg 50% 0% / 0.5);
+	/* box-shadow: 1px 1px 0px 0px hsl(210deg 50% 85% / 0.2),
 		2px 2px 2px 2px hsl(200deg 70% 30% / 0.6),
-		inset 2px 2px 400px hsl(200deg 50% 0% / 0.5);
+		inset 2px 2px 400px hsl(200deg 50% 0% / 0.5); */
 }
 
 .header__left > div:has(h1::hover) .header__left--pipesImage {
@@ -102,7 +58,7 @@ body::-webkit-scrollbar {
 }
 
 .header__left h1 {
-	cursor: pointer;
+	/* cursor: pointer; */
 	font-size: 2rem;
 	/* font-size: var(--font-size-1); */
 	font-size: 1.8rem;
@@ -110,7 +66,7 @@ body::-webkit-scrollbar {
 	position: relative;
 }
 .header__left h1::after {
-	content: "Я, Дмитрий \2014 профессиональный мастер-сантехник.";
+	/* content: "Я, Дмитрий \2014 профессиональный мастер-сантехник."; */
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -146,7 +102,7 @@ body::-webkit-scrollbar {
 	}
 }
 .header__left {
-	color: white;
+	/* color: white; */
 }
 .header__left h2 {
 	grid-column: span 2;
@@ -204,16 +160,26 @@ body::-webkit-scrollbar {
 	/* font-weight: bold; */
 	padding: 1rem;
 	display: block;
-	border: 2px solid greenyellow;
-	border-radius: 50%;
+	border: 2px solid hsl(228, 37%, 67%);
+	border: none;
+	border-radius: 0.3rem;
+	background: hsl(228, 29%, 37%);
+	background: hsl(225 50% 50% / 0.8);
+	/* border-radius: 50%; */
 	width: fit-content;
-	aspect-ratio: 1/1;
+	/* aspect-ratio: 1/1; */
 	display: grid;
 	place-content: center;
+	margin-top: 1rem;
+	margin-left: 1rem;
+}
+.header__callLink:hover {
+	background: hsl(220 50% 50% / 0.9);
+	/* color: rgb(221, 165, 23) !important; */
 }
 .header__callLink > a {
 	text-decoration: none;
-	color: white;
+	/* color: white; */
 	font-weight: bold;
 	/* padding: 1rem; */
 	/* display: block; */
