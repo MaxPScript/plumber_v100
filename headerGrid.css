@@ -8,19 +8,22 @@
 	background: rgba(255, 255, 255, 0.2); /* White color with 80% opacity */
 	backdrop-filter: blur(1px); /* Apply a blur effect to mimic frosted glass */
 
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow for depth */
 	padding: 0.5rem; /* Optional: Add padding for content inside the container */
 }
 .navbar__logo {
-	position: relative;
+	/* position: relative; */
+	display: grid;
 }
 .navbar__logo > img {
+	grid-column: 1/1;
+	grid-row: 1/1;
 	width: 3rem;
 	cursor: pointer;
-	position: relative;
+	/* position: relative; */
 }
 .navbar__logo > img:nth-child(2) {
-	left: -52%;
+	/* left: -52%; */
 	opacity: 0;
 	transition: opacity 0.3s;
 }
