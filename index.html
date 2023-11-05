@@ -17,46 +17,57 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="main.css" />
-		<link rel="stylesheet" href="header.css" />
+		<!-- <link rel="stylesheet" href="header.css" /> -->
+		<link rel="stylesheet" href="headerGrid.css" />
 		<link rel="stylesheet" href="services.css" />
+		<link rel="stylesheet" href="helpers.css" />
+		<!-- <link rel="stylesheet" href="./media.css" /> -->
 	</head>
 	<body>
+		<div class="info">
+			<span>width</span>
+			<br />
+			<span>height</span>
+		</div>
+		<style>
+			.info {
+				position: fixed;
+				top: 0;
+				right: 20%;
+			}
+			.info > span {
+				/* color: red !important; */
+			}
+		</style>
+		<!-- BUTTON ON/OFF BORDERS -->
+		<!-- <button id="btnBorder_id" onclick="borderToggle()">border ON</button> -->
+		<!-- BUTTON ON/OFF BORDERS -->
 		<main class="main">
+			<!-- <HEADER> -->
 			<header class="header">
-				<section class="header__left">
-					<!-- <div class="header__left--glass"> -->
-					<div style="display: flex; gap: 1.5rem" class="hover">
-						<div class="header__left--pipesImage">
-							<!-- <img
-								src="./assets/img/plumbing_pipes_with_gold_clamps_in_steel_blue_st.jpg"
-								alt="pipes image"
-								srcset=""
-								style=""
-							/> -->
-						</div>
-						<h1>Я, Дмитрий &mdash; профессиональный мастер-сантехник.</h1>
-						<style>
-							/* .hover:has(h1:hover) .header__left--pipesImage {
-								transition: all 0.3s;
-								width: 50%;
-							} */
-						</style>
+				<div class="header__grid">
+					<div class="header__pipesImage">
+						<span style="font-size: 2rem; color: rgb(153, 255, 0)">width:</span>
 					</div>
+					<h1>
+						Я, Дмитрий &mdash; профессиональный мастер-сантехник.
+						<span style="position: absolute; color: rgb(153, 255, 0)"></span>
+					</h1>
 					<h3>
 						Предлагаю широкий спектр услуг по сантехническим ремонтам и
 						обслуживанию.
+						<span style="position: absolute; color: rgb(153, 255, 0)"></span>
 					</h3>
-					<!-- </div> -->
-				</section>
-				<div class="header__callLink">
-					<a href="tel:+79775285745">Позвоните мне!</a>
-				</div>
-				<!-- <section class="header__right">
-					<div class="header__right--pipesImage">
-						
+					<div class="header__callLink">
+						<a href="tel:+79775285745"
+							>Позвоните <br />
+							мне!</a
+						>
 					</div>
-				</section> -->
+				</div>
 			</header>
+			<!-- <HEADER /> -->
+
 			<section class="section services">
 				<h2>Что я делаю</h2>
 				<div class="services__details">
@@ -102,4 +113,5 @@
 		</main>
 	</body>
 	<script src="./script.js"></script>
+	<!-- <script src="./helper.js"></script> -->
 </html>

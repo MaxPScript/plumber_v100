@@ -11,8 +11,8 @@
 	--height-svh: 100dvh;
 	font-size: calc(15px + 0.390625vw);
 	font-size: calc(14px + 0.390625vw);
-	font-size: calc(10px + 1vw);
-	background: hsl(210 100% 3% / 1);
+	font-size: calc(8px + 0.8vw);
+	background: hsl(55 100% 95% / 1);
 }
 * {
 	margin: 0;
@@ -21,7 +21,7 @@
 	font-family: "Roboto", sans-serif;
 	/* color: #469be0; */
 	color: white;
-	color: greenyellow;
+	/* color: greenyellow; */
 }
 body {
 	/* scrollbar-width: none; */
