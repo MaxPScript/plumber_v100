@@ -8,7 +8,7 @@
 	background: rgba(255, 255, 255, 0.2); /* White color with 80% opacity */
 	backdrop-filter: blur(1px); /* Apply a blur effect to mimic frosted glass */
 
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow for depth */
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow for depth */
 	padding: 0.5rem; /* Optional: Add padding for content inside the container */
 }
 .navbar__logo {
@@ -31,12 +31,12 @@
 	opacity: 1;
 }
 .header {
-	background-image: url(./assets/img/nightCity_sm_compress.jpg);
+	/* background-image: url(./assets/img/nightCity_sm_compress.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
-	height: 100vh;
-	padding: 5.5rem 3rem 3rem 3rem;
+	background-position: center; */
+	/* height: 100vh; */
+	padding: 7.5rem 3rem 3rem 3rem;
 }
 .header__grid {
 	max-width: 65%;
