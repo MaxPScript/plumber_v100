@@ -38,6 +38,7 @@ body::-webkit-scrollbar {
 	/* scroll-snap-type: y mandatory; */
 	/* scroll-behavior: smooth; */
 	/* overflow-y: auto; */
+	position: relative;
 }
 .main::-webkit-scrollbar {
 	/* display: none; */

@@ -1,17 +1,46 @@
+.navbar {
+	display: flex;
+	position: fixed;
+	top: 0;
+	width: 1400px;
+	border-bottom: 1px solid hsl(180 65% 65% / 0.2);
+
+	background: rgba(255, 255, 255, 0.2); /* White color with 80% opacity */
+	backdrop-filter: blur(1px); /* Apply a blur effect to mimic frosted glass */
+
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
+	padding: 0.5rem; /* Optional: Add padding for content inside the container */
+}
+.navbar__logo {
+	position: relative;
+}
+.navbar__logo > img {
+	width: 3rem;
+	cursor: pointer;
+	position: relative;
+}
+.navbar__logo > img:nth-child(2) {
+	left: -52%;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+.navbar__logo > img:nth-child(2):hover {
+	opacity: 1;
+}
 .header {
 	background-image: url(./assets/img/nightCity_sm_compress.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 100vh;
-	padding: 3rem 3rem 3rem 3rem;
+	padding: 5.5rem 3rem 3rem 3rem;
 }
 .header__grid {
 	max-width: 65%;
 	display: grid;
 	gap: 1rem;
 	grid-template-columns: minmax(150px, 30%);
-	grid-template-rows: 30vh auto auto;
+	grid-template-rows: 10rem auto auto;
 
 	border: 4px solid rgb(255, 179, 0);
 
