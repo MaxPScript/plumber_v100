@@ -3,7 +3,7 @@
 	position: fixed;
 	top: 0;
 	width: 1400px;
-	border-bottom: 1px solid hsl(180 65% 65% / 0.2);
+	border-bottom: 1px solid hsl(180 65% 65% / 0.1);
 
 	background: rgba(255, 255, 255, 0.2); /* White color with 80% opacity */
 	backdrop-filter: blur(1px); /* Apply a blur effect to mimic frosted glass */
@@ -18,7 +18,7 @@
 .navbar__logo > img {
 	grid-column: 1/1;
 	grid-row: 1/1;
-	width: 3rem;
+	width: 3.5rem;
 	cursor: pointer;
 	/* position: relative; */
 }
@@ -35,7 +35,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center; */
-	/* height: 100vh; */
+	height: 100vh;
 	padding: 7.5rem 3rem 3rem 3rem;
 }
 .header__grid {
