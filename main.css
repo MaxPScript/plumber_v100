@@ -13,6 +13,8 @@
 	font-size: calc(14px + 0.390625vw);
 	font-size: calc(8px + 0.8vw);
 	background: hsl(55 100% 95% / 1);
+
+	height: -webkit-fill-available;
 }
 * {
 	margin: 0;
@@ -31,6 +33,8 @@ body {
 	background-attachment: fixed;
 	width: 100%;
 	height: 100%;
+	height: -webkit-fill-available;
+
 	/* position: fixed; */
 	/* scrollbar-width: none; */
 }
