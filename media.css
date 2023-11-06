@@ -18,3 +18,8 @@
 		font-size: 1.9rem;
 	}
 }
+@media (width < 500px) {
+	.header__grid > h1 {
+		font-size: 2rem;
+	}
+}
