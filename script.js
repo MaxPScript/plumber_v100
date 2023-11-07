@@ -17,6 +17,7 @@ window.onload = function () {
 	const stylesPipes = window.getComputedStyle(pipes);
 
 	const fontSizeH1 = stylesH1.getPropertyValue("font-size");
+	const gridColumnStart = stylesH1.getPropertyValue("grid-column-start");
 	const fontSizeH3 = stylesH3.getPropertyValue("font-size");
 	const widthPipes = stylesPipes.getPropertyValue("width");
 
@@ -24,7 +25,7 @@ window.onload = function () {
 	const spanH3 = document.querySelector("h3 span");
 	const spanPipes = pipes.querySelector("span");
 
-	spanH1.textContent = fontSizeH1;
+	spanH1.textContent = fontSizeH1 + gridColumnStart;
 	spanH3.textContent = fontSizeH3;
 	spanPipes.textContent = widthPipes;
 };
@@ -45,6 +46,7 @@ window.onresize = function () {
 	const stylesPipes = window.getComputedStyle(pipes);
 
 	const fontSizeH1 = stylesH1.getPropertyValue("font-size");
+	const gridColumnStart = stylesH1.getPropertyValue("grid-column-start");
 	const fontSizeH3 = stylesH3.getPropertyValue("font-size");
 	const widthPipes = stylesPipes.getPropertyValue("width");
 
@@ -52,7 +54,7 @@ window.onresize = function () {
 	const spanH3 = document.querySelector("h3 span");
 	const spanPipes = pipes.querySelector("span");
 
-	spanH1.textContent = fontSizeH1;
+	spanH1.textContent = fontSizeH1 + gridColumnStart;
 	spanH3.textContent = fontSizeH3;
 	spanPipes.textContent = widthPipes;
 };
