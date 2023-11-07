@@ -9,9 +9,10 @@
 
 	--height-svh: 100svh;
 	--height-svh: 100dvh;
-	font-size: calc(15px + 0.390625vw);
+	/* font-size: calc(15px + 0.390625vw);
 	font-size: calc(14px + 0.390625vw);
-	font-size: calc(8px + 0.8vw);
+	font-size: calc(8px + 0.8vw); */
+	/* font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem); */
 	background: hsl(55 100% 95% / 1);
 
 	height: -webkit-fill-available;
