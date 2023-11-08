@@ -1,0 +1,17 @@
+img {
+	width: 30%;
+}
+.t1 {
+	width: 100%;
+}
+table,
+td {
+	/* border: 1px solid grey; */
+	/* border-collapse: collapse; */
+}
+.t1:first-child {
+	/* background: #000; */
+}
+.t1:nth-child(2) {
+	/* background: yellow; */
+}
