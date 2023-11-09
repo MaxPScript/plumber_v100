@@ -5,8 +5,9 @@
 	/* margin-top: 1px; */
 	z-index: 1;
 
-	/* max-width: 1400px; */
-	/* width: 100%; */
+	max-width: 1400px;
+	width: 100%;
+	margin: auto;
 	border-bottom: 1px solid hsl(180 65% 65% / 0.1);
 
 	background: rgba(255, 255, 255, 0.2); /* White color with 80% opacity */
