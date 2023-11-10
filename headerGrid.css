@@ -23,7 +23,7 @@
 .navbar__logo > img {
 	grid-column: 1/1;
 	grid-row: 1/1;
-	width: 3.5rem;
+	width: 2rem;
 	cursor: pointer;
 	/* position: relative; */
 }
@@ -41,7 +41,7 @@
 	background-repeat: no-repeat;
 	background-position: center; */
 	height: 100vh;
-	padding: 7.5rem 3rem 3rem 3rem;
+	padding: 4rem 3rem 3rem 3rem;
 }
 .header__grid {
 	max-width: 67%;
@@ -50,13 +50,21 @@
 	grid-template-columns: minmax(150px, 30%);
 	grid-template-rows: 10rem auto auto;
 
-	border: 4px solid rgb(255, 179, 0);
+	/* border: 4px solid rgb(255, 179, 0); */
 
 	/* min-height: 60vh; */
 	padding: 1rem;
+
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(0, 0, 70, 0.2);
+	backdrop-filter: blur(2px);
+
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	box-shadow: inset 2px 2px 400px hsl(200deg 50% 0% / 0.5);
 }
 .header__grid > * {
-	border: 2px solid orangered;
+	/* border: 2px solid orangered; */
 }
 
 .header__pipesImage {

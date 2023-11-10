@@ -67,6 +67,7 @@ body {
 
 	/* position: fixed; */
 	/* scrollbar-width: none; */
+	min-height: 170vh;
 }
 body::-webkit-scrollbar {
 	/* display: none; */
