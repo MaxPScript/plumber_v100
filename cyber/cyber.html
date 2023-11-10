@@ -5,28 +5,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link rel="stylesheet" href="style.css" />
+		<script src="node_modules/gridstack/dist/gridstack-all.js"></script>
+		<link
+			href="node_modules/gridstack/dist/gridstack.min.css"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
-		<img src="./image 1.jpg" alt="img" />
-		<table class="t1" border="1" borderCollapse="collapse">
-			<tr>
-				<td bgcolor="black">1</td>
-				<td bgcolor="yellow">2</td>
-				<td>
-					3
-					<table>
-						<tr>
-							<td>3_1</td>
-						</tr>
-						<tr>
-							<td>3_2</td>
-						</tr>
-					</table>
-				</td>
-				<td>4</td>
-				<td>5</td>
-			</tr>
-		</table>
+		<style type="text/css">
+			.grid-stack {
+				background: #fafad2;
+			}
+			.grid-stack-item-content {
+				background-color: #18bc9c;
+			}
+		</style>
+		<div class="grid-stack"></div>
 	</body>
 	<script src="./cyber.js"></script>
 </html>

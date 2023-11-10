@@ -1,6 +1,11 @@
 log = console.log;
 
 window.onload = function () {
+	// document.body.style.scrollbarBaseColor = "#0D588A";
+	document.body.style.scrollbarBaseColor = "#ff0000";
+	document.body.style.scrollbarArrowColor = "#0000ff";
+	document.body.style.scrollbarTrackColor = "#ff0000";
+
 	const h1 = document.getElementsByTagName("h1")[0];
 	const h3 = document.getElementsByTagName("h3")[0];
 	const pipes = document.querySelector(".header__pipesImage");

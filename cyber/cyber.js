@@ -18,23 +18,29 @@ log("text.txt");
 // 		});
 // });
 
-document.addEventListener("DOMContentLoaded", function () {
-	const dataContainer = document.getElementById("dataContainer");
+// document.addEventListener("DOMContentLoaded", function () {
+// 	const dataContainer = document.getElementById("dataContainer");
 
-	fetch("text.txt")
-		.then((response) => {
-			if (!response.ok) {
-				throw new Error("Network response was not ok");
-			}
-			return response.text();
-		})
-		.then((data) => {
-			dataContainer.textContent = data;
-		})
-		.catch((error) => {
-			console.error(
-				"There has been a problem with your fetch operation:",
-				error
-			);
-		});
-});
+// 	fetch("text.txt")
+// 		.then((response) => {
+// 			if (!response.ok) {
+// 				throw new Error("Network response was not ok");
+// 			}
+// 			return response.text();
+// 		})
+// 		.then((data) => {
+// 			dataContainer.textContent = data;
+// 		})
+// 		.catch((error) => {
+// 			console.error(
+// 				"There has been a problem with your fetch operation:",
+// 				error
+// 			);
+// 		});
+// });
+var items = [
+	{ content: "my first widget" },
+	{ x: 0, y: 0, content: "my last widget" },
+];
+var grid = GridStack.init();
+grid.load(items);
