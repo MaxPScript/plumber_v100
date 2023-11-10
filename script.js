@@ -39,6 +39,11 @@ window.onload = function () {
 	spanH1.textContent = fontSizeH1 + gridColumnStart;
 	spanH3.textContent = fontSizeH3;
 	spanPipes.textContent = widthPipes;
+
+	// DPR
+	const outputElement = document.querySelector(".dpr");
+	outputElement.innerText = `DPR is: ${window.devicePixelRatio}`;
+	// DPR
 };
 window.onresize = function () {
 	const h1 = document.getElementsByTagName("h1")[0];
