@@ -44,7 +44,7 @@
 	padding: 7.5rem 3rem 3rem 3rem;
 }
 .header__grid {
-	max-width: 65%;
+	max-width: 67%;
 	display: grid;
 	gap: 1rem;
 	grid-template-columns: minmax(150px, 30%);
@@ -66,10 +66,11 @@
 	background-position: center;
 }
 .header__grid > h1 {
-	/* font-size: 1.5rem; */
+	font-size: 1rem;
 	padding: 0.5rem;
 }
 .header__grid > h3 {
+	font-size: 0.8rem;
 	grid-column: span 2;
 	padding: 0.5rem;
 }

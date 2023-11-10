@@ -2,9 +2,11 @@
 	.header__pipesImage {
 		grid-column: span 2;
 		width: 150px;
+		width: 50%;
 	}
 	.header__grid {
-		max-width: 80%;
+		max-width: unset;
+		width: 80%;
 		margin: auto;
 		min-height: -webkit-fill-available;
 		margin-bottom: 6rem;
@@ -12,16 +14,24 @@
 	.header__grid {
 		& h1 {
 			grid-column-start: span 2;
-			font-size: 2.5rem;
+			font-size: 2rem;
 		}
 	}
 	.header__grid > h3 {
 		/* grid-column: span 2; */
-		font-size: 1.9rem;
+		font-size: 1.5rem;
 	}
 }
-@media (width < 500px) {
+@media (width < 560px) {
+	.header__grid {
+		max-width: unset;
+		width: 95%;
+	}
 	.header__grid > h1 {
-		font-size: 2rem;
+		font-size: 1.5rem;
+	}
+	.header__grid > h3 {
+		/* grid-column: span 2; */
+		font-size: 1rem;
 	}
 }
