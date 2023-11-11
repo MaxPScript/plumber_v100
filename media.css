@@ -26,6 +26,9 @@
 	}
 }
 @media (width < 560px) {
+	body {
+		background-position: 0 0;
+	}
 	.header {
 		background-position: 0% 0%;
 	}

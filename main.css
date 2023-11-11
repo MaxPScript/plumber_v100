@@ -71,6 +71,12 @@ body {
 	position: relative;
 	/* scrollbar-width: none; */
 	/* min-height: 170vh; */
+
+	background-image: url(./assets/img/nightCity_sm_compress.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
 }
 body::before {
 	/* content: "";
