@@ -23,6 +23,7 @@
 	width: 100%;
 	display: grid;
 	min-height: 100%;
+	height: 100lvh;
 }
 /* Цвет фона скроллбара */
 ::-webkit-scrollbar {
