@@ -12,7 +12,7 @@ function getHeaderFlexBasis() {
 
 	const outputDiv = document.querySelector(".headerFlexBasis");
 	outputDiv.innerText = `
-	${flexBasis}
+	120 dvb ${flexBasis}
 	${flexGrow}
 	${flexShrink}
 	`;
