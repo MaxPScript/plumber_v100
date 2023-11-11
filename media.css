@@ -28,7 +28,7 @@
 @media (width < 560px) {
 	.header__grid {
 		max-width: unset;
-		width: 95%;
+		width: 90%;
 	}
 	.header__grid > h1 {
 		font-size: 1.5rem;
