@@ -11,8 +11,8 @@
 		max-width: unset;
 		width: 80%;
 		margin: auto;
-		min-height: -webkit-fill-available;
-		margin-bottom: 6rem;
+		/* min-height: -webkit-fill-available; */
+		/* margin-bottom: 6rem; */
 	}
 	.header__grid {
 		& h1 {
