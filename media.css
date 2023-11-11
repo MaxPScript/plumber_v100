@@ -27,10 +27,11 @@
 }
 @media (width < 560px) {
 	body {
-		background-position: 0 0;
+		background-position: 50% 50%;
 	}
 	.header {
-		background-position: 0% 0%;
+		/* background-position: 0% 0%; */
+		background-position: 50% 50%;
 	}
 	.header__grid {
 		max-width: unset;
