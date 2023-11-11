@@ -21,6 +21,22 @@ function getHeaderFlexBasis() {
 	`;
 }
 
+function getWindowWidthAnsHeight() {
+	// const header = document.querySelector(".header");
+	// const styles = window.getComputedStyle(header);
+	// const flexBasis = styles.getPropertyValue("flex-basis");
+	// const flexGrow = styles.getPropertyValue("flex-grow");
+	const outputDiv = document.querySelector(".windowWidthAndHeight");
+	outputDiv.innerText = `
+		window.innerWidth: ${window.innerWidth}
+		window.innerHeight: ${window.innerHeight}
+	`;
+}
+
 window.addEventListener("load", (ev) => {
 	getHeaderFlexBasis();
+	getWindowWidthAnsHeight();
+});
+window.addEventListener("resize", (ev) => {
+	getWindowWidthAnsHeight();
 });

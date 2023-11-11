@@ -92,7 +92,7 @@ body::-webkit-scrollbar {
 	/* scrollbar-width: none; */
 	/* scroll-snap-type: y mandatory; */
 	/* scroll-behavior: smooth; */
-	overflow: clip;
+	/* overflow: clip; */
 	position: relative;
 }
 .main::-webkit-scrollbar {
