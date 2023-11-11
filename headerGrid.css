@@ -40,6 +40,8 @@
 	flex-direction: column;
 }
 .header {
+	flex-grow: 1;
+	flex-shrink: 0;
 	flex-basis: 120lvb;
 	background-image: url(./assets/img/nightCity_sm_compress.jpg);
 	background-size: cover;
