@@ -47,7 +47,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-attachment: fixed;
+	/* background-attachment: fixed; */
 	/* height: 100vh; */
 	padding: 4rem 0rem 3rem 0rem;
 }
