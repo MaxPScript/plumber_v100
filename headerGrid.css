@@ -42,9 +42,9 @@
 .header {
 	flex-grow: 1;
 	flex-shrink: 0;
-	flex-basis: 120dvb;
+	/* flex-basis: 120dvb; */
 	background-image: url(./assets/img/nightCity_sm_compress.jpg);
-	background-size: cover;
+	/* background-size: cover; */
 	background-repeat: no-repeat;
 	background-position: center;
 	/* background-attachment: fixed; */
