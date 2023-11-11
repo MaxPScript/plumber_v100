@@ -41,10 +41,11 @@
 }
 .header {
 	flex-basis: 100vh;
-	/* background-image: url(./assets/img/nightCity_sm_compress.jpg);
+	background-image: url(./assets/img/nightCity_sm_compress.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center; */
+	background-position: center;
+	background-attachment: fixed;
 	/* height: 100vh; */
 	padding: 4rem 0rem 3rem 0rem;
 }
