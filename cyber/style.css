@@ -1,17 +1,13 @@
-img {
-	width: 30%;
-}
-.t1 {
+.my-flex-cont1 {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-between;
 	width: 100%;
+	align-content: center;
 }
-table,
-td {
-	/* border: 1px solid grey; */
-	/* border-collapse: collapse; */
-}
-.t1:first-child {
-	/* background: #000; */
-}
-.t1:nth-child(2) {
-	/* background: yellow; */
+.my-flex-box1 {
+	margin: 5px;
+	padding: 5px;
+	border: solid 1px #6b8e23;
 }

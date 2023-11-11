@@ -75,8 +75,8 @@ body {
 	background-image: url(./assets/img/nightCity_sm_compress.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
-	/* background-attachment: fixed; */
+	background-position: 0 0;
+	background-attachment: fixed;
 }
 body::before {
 	/* content: "";
