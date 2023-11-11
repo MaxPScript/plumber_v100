@@ -26,6 +26,9 @@
 	}
 }
 @media (width < 560px) {
+	.header {
+		background-position: 0% 0%;
+	}
 	.header__grid {
 		max-width: unset;
 		width: 90%;
