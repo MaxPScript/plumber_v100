@@ -21,6 +21,8 @@
 
 	/* height: -webkit-fill-available; */
 	width: 100%;
+	display: grid;
+	min-height: 100%;
 }
 /* Цвет фона скроллбара */
 ::-webkit-scrollbar {
@@ -94,6 +96,7 @@ body::-webkit-scrollbar {
 	/* scroll-behavior: smooth; */
 	/* overflow: clip; */
 	/* position: relative; */
+	height: 100%;
 }
 .main::-webkit-scrollbar {
 	/* display: none; */
