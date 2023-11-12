@@ -37,15 +37,15 @@ function getMetaUserScalable() {
 	const metaTagViewport = document.querySelector("meta[name=viewport]");
 	log(metaTagViewport);
 	const userScalable = metaTagViewport.getAttribute("user-scalable");
-	log(typeof +userScalable);
+	log(typeof userScalable);
 	const outputDiv = document.querySelector(".metaViewport");
-	if (+userScalable) {
+	if (userScalable) {
 		outputDiv.innerText = `
-		user-scalable: ${Boolean(+userScalable)}
+		user-scalable: ${userScalable}
 		`;
 	} else {
 		outputDiv.innerText = `
-		user-scalable: ${Boolean(+userScalable)}
+		user-scalable attr is not found
 		`;
 	}
 }
