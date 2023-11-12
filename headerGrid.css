@@ -87,7 +87,7 @@
 	background-position: center;
 
 	border-radius: 0.5rem;
-	filter: drop-shadow(3px 4px 7px hsl(209deg 50% 3% / 1));
+	filter: drop-shadow(3px 4px 7px hsl(209deg 50% 3% / 0.6));
 	box-shadow: inset 12px 12px 120px hsl(300 50% 100% / 0.25);
 }
 .header__grid > h1 {
