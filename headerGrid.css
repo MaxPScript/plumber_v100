@@ -94,6 +94,7 @@
 .header__grid > h1 {
 	font-size: 1rem;
 	padding: 0.5rem;
+	text-shadow: 0 1px hsl(200 50% 1% / 1);
 }
 .header__grid > h3 {
 	font-size: 0.8rem;
