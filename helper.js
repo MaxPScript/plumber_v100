@@ -35,13 +35,15 @@ function getWindowWidthAnsHeight() {
 
 function getMetaUserScalable() {
 	const metaTagViewport = document.querySelector("meta[name=viewport]");
-	log(metaTagViewport);
 	const userScalable = metaTagViewport.getAttribute("user-scalable");
-	log(typeof userScalable);
+	const maxScale = metaTagViewport.getAttribute("maximum-scale");
+	const minScale = metaTagViewport.getAttribute("minimum-scale");
 	const outputDiv = document.querySelector(".metaViewport");
 	if (userScalable) {
 		outputDiv.innerText = `
 		user-scalable: ${userScalable}
+		max-scale: ${maxScale}
+		min-scale: ${minScale}
 		`;
 	} else {
 		outputDiv.innerText = `
