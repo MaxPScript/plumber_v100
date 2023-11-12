@@ -55,9 +55,9 @@ function getMetaUserScalable() {
 window.addEventListener("load", (ev) => {
 	getHeaderFlexBasis();
 	getWindowWidthAnsHeight();
-	getMetaUserScalable();
+	// getMetaUserScalable();
 });
 window.addEventListener("resize", (ev) => {
 	getWindowWidthAnsHeight();
-	getMetaUserScalable();
+	// getMetaUserScalable();
 });
