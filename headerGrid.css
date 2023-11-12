@@ -46,13 +46,14 @@
 	flex-grow: 1;
 	flex-shrink: 0;
 	/* flex-basis: 120dvb; */
-	/* background-image: url(./assets/img/nightCity_sm_compress.jpg); */
+	background-image: url(./assets/img/nightCity_sm_compress.jpg);
 	/* background-size: cover; */
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
 	/* height: 100vh; */
 	padding: 5rem 0rem 2rem 0rem;
+	filter: brightness(1.1);
 }
 .header__grid {
 	max-width: 67%;
