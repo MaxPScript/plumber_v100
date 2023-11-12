@@ -33,10 +33,29 @@ function getWindowWidthAnsHeight() {
 	`;
 }
 
+function getMetaUserScalable() {
+	const metaTagViewport = document.querySelector("meta[name=viewport]");
+	log(metaTagViewport);
+	const userScalable = metaTagViewport.getAttribute("user-scalable");
+	log(userScalable);
+	const outputDiv = document.querySelector(".metaViewport");
+	if (userScalable) {
+		outputDiv.innerText = `
+		user-scalable: ${Boolean(userScalable)}
+		`;
+	} else {
+		outputDiv.innerText = `
+		user-scalable: ${Boolean(userScalable)}
+		`;
+	}
+}
+
 window.addEventListener("load", (ev) => {
 	getHeaderFlexBasis();
 	getWindowWidthAnsHeight();
+	getMetaUserScalable();
 });
 window.addEventListener("resize", (ev) => {
 	getWindowWidthAnsHeight();
+	getMetaUserScalable();
 });
