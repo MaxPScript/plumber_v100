@@ -48,7 +48,7 @@
 	flex-basis: 100vh;
 	background-image: url(./assets/img/nightCity_sm_compress.jpg);
 	/* background-size: cover; */
-	background-size: 100%;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	/* background-position: center; */
 	background-attachment: fixed;
