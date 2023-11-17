@@ -21,7 +21,7 @@ function getHeaderFlexBasis() {
 	`;
 }
 
-function getWindowWidthAnsHeight() {
+function getWindowWidthAndHeight() {
 	// const header = document.querySelector(".header");
 	// const styles = window.getComputedStyle(header);
 	// const flexBasis = styles.getPropertyValue("flex-basis");
@@ -54,10 +54,10 @@ function getMetaUserScalable() {
 
 window.addEventListener("load", (ev) => {
 	getHeaderFlexBasis();
-	getWindowWidthAnsHeight();
+	getWindowWidthAndHeight();
 	// getMetaUserScalable();
 });
 window.addEventListener("resize", (ev) => {
-	getWindowWidthAnsHeight();
+	getWindowWidthAndHeight();
 	// getMetaUserScalable();
 });

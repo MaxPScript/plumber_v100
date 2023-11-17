@@ -63,6 +63,7 @@ body {
 	background-position: center;
 	background-attachment: fixed; */
 	background: grey;
+	background: hsl(208 50% 30% / 1);
 	max-width: 1400px;
 	width: 100%;
 	margin: auto;
