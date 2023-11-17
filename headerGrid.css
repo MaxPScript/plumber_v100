@@ -47,7 +47,7 @@
 .header {
 	flex-grow: 1;
 	flex-shrink: 0;
-	flex-basis: 100dvh;
+	flex-basis: 100svh;
 
 	display: grid;
 	grid-template-rows: clamp(3.5rem, 4.5rem, 150px) auto 5rem;
@@ -56,7 +56,7 @@
 	background: url(./assets/img/nightCity_sm_compress.jpg),
 		url(./assets/img/nightCity_sm_compress.jpg);
 
-	background-size: contain, cover;
+	background-size: cover, contain;
 	/* background-size: contain; */
 	/* background-size: 100% auto; */
 	background-repeat: no-repeat;
