@@ -47,7 +47,7 @@
 .header {
 	flex-grow: 1;
 	flex-shrink: 0;
-	flex-basis: 100vh;
+	flex-basis: 100dvh;
 
 	display: grid;
 	grid-template-rows: clamp(3.5rem, 4.5rem, 150px) auto 5rem;
