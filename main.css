@@ -15,7 +15,7 @@
 	/* FONT-SIZE */
 	/* if(window.innerWidth == 700px)-->font-size == 18px */
 	/* if(window.innerWidth == 1400px)-->font-size == 32px */
-	font-size: clamp(1rem, 4px + 2vw, 2rem);
+	font-size: clamp(0.9rem, 4px + 2vw, 2rem);
 	/* FONT-SIZE */
 	/* background: hsl(55 100% 95% / 1); */
 

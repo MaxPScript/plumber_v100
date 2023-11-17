@@ -1,4 +1,4 @@
-@media (width < 750px) {
+/* @media (width < 750px) {
 	body {
 		background-position: 0 0;
 	}
@@ -11,8 +11,6 @@
 		max-width: unset;
 		width: 80%;
 		margin: auto;
-		/* min-height: -webkit-fill-available; */
-		/* margin-bottom: 6rem; */
 	}
 	.header__grid {
 		& h1 {
@@ -21,27 +19,19 @@
 		}
 	}
 	.header__grid > h3 {
-		/* grid-column: span 2; */
 		font-size: 1.5rem;
 	}
-}
-@media (width < 560px) {
-	body {
-		/* background-position: 50% 50%; */
-		background-position: 0% 0%;
-	}
-	.header {
-		/* background-position: 50% 50%; */
-	}
+} */
+@media (width < 576px) {
 	.header__grid {
-		max-width: unset;
-		width: 90%;
+		display: flex;
+		flex-direction: column;
+		max-width: 85%;
+		margin: auto;
+		left: 0;
 	}
-	.header__grid > h1 {
-		font-size: 1.5rem;
-	}
-	.header__grid > h3 {
-		/* grid-column: span 2; */
-		font-size: 1rem;
+	.header__pipesImage {
+		aspect-ratio: 2/1;
+		margin-inline: 2rem;
 	}
 }
