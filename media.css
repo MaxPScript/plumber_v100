@@ -26,12 +26,16 @@
 	.header__grid {
 		display: flex;
 		flex-direction: column;
+		justify-content: space-around;
 		max-width: 85%;
 		margin: auto;
 		left: 0;
 	}
+	.header__grid h1 {
+		font-size: 2rem;
+	}
 	.header__pipesImage {
-		aspect-ratio: 2/1;
-		margin-inline: 2rem;
+		aspect-ratio: 2/1.5;
+		margin-inline: 3rem;
 	}
 }
