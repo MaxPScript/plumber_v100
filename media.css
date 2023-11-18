@@ -38,4 +38,8 @@
 		aspect-ratio: 2/1.5;
 		margin-inline: 3rem;
 	}
+	.header__callLink {
+		font-size: 1rem;
+		padding: 0.5rem 2rem;
+	}
 }
