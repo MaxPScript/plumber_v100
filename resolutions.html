@@ -42309,3 +42309,56 @@
 		</tr>
 	</tbody>
 </table>
+<script>
+	window.onload = () => {
+		log = console.log;
+		var symbolRegex = /\b\w*x\w*\b/g;
+		var items = document.querySelectorAll(".FieldBody > td[title]");
+		var output = [];
+		var landscape = [];
+		var portrait = [];
+		var square = [];
+		items.forEach((el) => {
+			var resolution = el.innerText.match(symbolRegex);
+			var xIndex = resolution[0].indexOf("x");
+			var strBefore = resolution[0].substring(0, xIndex);
+			var strAfter = resolution[0].substring(xIndex + 1);
+			if (+strBefore > +strAfter) {
+				landscape.push(resolution[0]);
+			} else if (+strBefore < +strAfter) {
+				portrait.push(resolution[0]);
+			} else {
+				square.push(resolution[0]);
+			}
+			// output.push(resolution[0]);
+		});
+		log(landscape);
+		log(portrait);
+		log(square);
+		var jsonFromArray = JSON.stringify(square);
+		log(typeof jsonFromArray);
+		// On the first page, send data to the server
+		fetch("/storeData", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify(square),
+		});
+		// localStorage.setItem("square", square);
+		localStorage.setItem("landscape", landscape);
+		localStorage.setItem("portrait", portrait);
+		// log(output);
+
+		// var body = document.querySelector("body");
+		// var table = document.querySelector(".DarkLines");
+		// var tbody = table.querySelector("tbody");
+		// log(body);
+		// var tds = table.querySelectorAll("tr td:nth-child(2)");
+		// log(tds.length);
+		// tds.forEach((el) => {
+		// 	table.appendChild(el);
+		// });
+		// tbody.innerHtml = "";
+	};
+</script>

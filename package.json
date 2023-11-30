@@ -1,12 +1,20 @@
 {
   "name": "plumber_v100",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxPScript/plumber_v100.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MaxPScript/plumber_v100/issues"
+  },
+  "homepage": "https://github.com/MaxPScript/plumber_v100#readme",
+  "description": ""
 }

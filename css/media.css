@@ -1,0 +1,48 @@
+/* @media (width < 750px) {
+	body {
+		background-position: 0 0;
+	}
+	.header__pipesImage {
+		grid-column: span 2;
+		width: 150px;
+		width: 70%;
+	}
+	.header__grid {
+		max-width: unset;
+		width: 80%;
+		margin: auto;
+	}
+	.header__grid {
+		& h1 {
+			grid-column-start: span 2;
+			font-size: 2rem;
+		}
+	}
+	.header__grid > h3 {
+		font-size: 1.5rem;
+	}
+} */
+@media (width < 576px) {
+	.header__grid {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		max-width: 85%;
+		margin: auto;
+		left: 0;
+	}
+	.header__grid h1 {
+		font-size: 2rem;
+	}
+	.header__grid h3 {
+		font-size: 1rem;
+	}
+	.header__pipesImage {
+		aspect-ratio: 2/1.5;
+		margin-inline: 2.7rem;
+	}
+	.header__callLink {
+		font-size: 1rem;
+		padding: 0.5rem 2rem;
+	}
+}
