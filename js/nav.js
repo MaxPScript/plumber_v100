@@ -17,7 +17,7 @@ window.addEventListener("resize", (e) => {
 window.addEventListener("scroll", (e) => {
 	// let scrollY = window.scrollY;
 	let nav = document.querySelector(".navbar");
-	nav.style.top = `${getWindowScrollY()}px`;
+	// nav.style.top = `${getWindowScrollY()}px`;
 	if (getWindowScrollY() > 250) {
 		// nav.classList.remove("opacity_1");
 		nav.classList.add("opacity_0");
