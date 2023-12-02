@@ -72,7 +72,7 @@
 	display: grid;
 	grid-template-rows: clamp(4.5rem, 5.7rem, 150px) auto 5rem;
 	grid-template-rows: 1fr 3fr 2fr;
-	grid-template-rows: 2fr 70vh 1fr;
+	grid-template-rows: 2fr 74vh 1fr;
 	/* background-image: url(./assets/img/nightCity_sm_compress.jpg); */
 	/* background: hsl(208 50% 30% / 1) url(./assets/img/nightCity_sm_compress.jpg); */
 	background: url(../assets/img/nightCity_sm_compress.jpg),
