@@ -26,7 +26,8 @@
 	.header__grid {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
+		/* justify-content: space-around; */
+		justify-content: space-evenly;
 		max-width: 85%;
 		margin: auto;
 		left: 0;

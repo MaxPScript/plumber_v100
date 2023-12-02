@@ -113,8 +113,8 @@
 	border: 1px solid rgba(255, 255, 255, 0.25);
 	box-shadow: inset 2px 2px 400px hsl(200deg 50% 0% / 0.5);
 }
-.header__grid > * {
-	/* border: 2px solid orangered; */
+.header__grid div {
+	/* border: 1px solid orangered; */
 }
 
 .header__pipesImage {
