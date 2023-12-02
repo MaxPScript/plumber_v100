@@ -165,7 +165,7 @@
 	for mobile 2.0625rem
 	*/
 	font-size: clamp(2.0625rem, 1.7707rem + 0.8652vw, 2.625rem);
-	padding: 0.5rem;
+	padding: 0.5rem 0;
 	text-shadow: 0 1px hsl(200 50% 1% / 1);
 }
 .header__grid h3 {
