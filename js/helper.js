@@ -61,3 +61,26 @@ window.addEventListener("resize", (ev) => {
 	getWindowWidthAndHeight();
 	// getMetaUserScalable();
 });
+
+// GET WIDTH OF ELEMENTS IN THE PAGE
+const arrayOfElements = [
+	"html",
+	"body",
+	"nav",
+	"main",
+	"header",
+	"section",
+	"div",
+	"h1",
+	"h2",
+	"h3",
+	"p",
+	"span",
+];
+arrayOfElements.forEach((item, i) => {
+	const el = document.querySelector(item);
+	const computedStyles = window.getComputedStyle(el);
+	const width = computedStyles.width;
+	console.log(`${item} width: ${width}`);
+});
+// GET WIDTH OF ELEMENTS IN THE PAGE

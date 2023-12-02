@@ -45,4 +45,8 @@
 		font-size: 1rem;
 		padding: 0.5rem 2rem;
 	}
+	.services__details {
+		/* flex-direction: column; */
+		grid-template-columns: none;
+	}
 }
