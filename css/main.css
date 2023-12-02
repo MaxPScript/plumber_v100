@@ -22,6 +22,7 @@
 
 	/* height: -webkit-fill-available; */
 	width: 100%;
+	max-width: 100%;
 	display: grid;
 	min-height: 100%;
 	/* height: 100lvh; */
@@ -77,8 +78,9 @@ body {
 	background-attachment: fixed; */
 	background: grey;
 	background: hsl(208 50% 30% / 1);
-	max-width: 1400px;
+	/* max-width: 1400px; */
 	width: 100%;
+	max-width: 100vw;
 	margin: auto;
 	/* height: 100lvh; */
 	/* height: -webkit-fill-available; */
