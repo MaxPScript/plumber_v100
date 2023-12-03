@@ -22,7 +22,8 @@
 		font-size: 1.5rem;
 	}
 } */
-@media (width < 576px) {
+
+@media (orientation: portrait) {
 	.header__grid {
 		display: flex;
 		flex-direction: column;
@@ -34,6 +35,40 @@
 	}
 	.header__grid h1 {
 		font-size: 1.8rem;
+	}
+	.header__grid h3 {
+		font-size: 1rem;
+	}
+	.header__pipesImage {
+		width: 60%;
+		/* margin: auto; */
+		/* aspect-ratio: 2/1.5; */
+		margin-inline: auto;
+	}
+	.header__callLink {
+		font-size: 1rem;
+		padding: 0.5rem 2rem;
+	}
+	.services__details {
+		/* flex-direction: column; */
+		grid-template-columns: none;
+	}
+}
+@media (width < 576px) {
+	.header {
+		grid-template-rows: 15vh min-content auto;
+	}
+	.header__grid {
+		display: flex;
+		flex-direction: column;
+		/* justify-content: space-around; */
+		justify-content: space-evenly;
+		max-width: 85%;
+		margin: auto;
+		left: 0;
+	}
+	.header__grid h1 {
+		font-size: 1.6rem;
 	}
 	.header__grid h3 {
 		font-size: 1rem;

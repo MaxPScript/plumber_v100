@@ -43,6 +43,7 @@
 .navbar__logo {
 	/* position: relative; */
 	display: grid;
+	margin-left: 6vh;
 }
 .navbar__logo > img {
 	grid-column: 1/1;
@@ -73,6 +74,8 @@
 	grid-template-rows: clamp(4.5rem, 5.7rem, 150px) auto 5rem;
 	grid-template-rows: 1fr 3fr 2fr;
 	grid-template-rows: 2fr 74vh 1fr;
+	grid-template-rows: 18vh 70vh 12vh;
+	grid-template-rows: 18vh min-content auto;
 	/* background-image: url(./assets/img/nightCity_sm_compress.jpg); */
 	/* background: hsl(208 50% 30% / 1) url(./assets/img/nightCity_sm_compress.jpg); */
 	background: url(../assets/img/nightCity_sm_compress.jpg),
@@ -93,17 +96,18 @@
 	grid-row: 2/3;
 	max-width: 80%;
 	display: grid;
-	gap: 1rem;
+	gap: 2rem;
 	grid-template-columns: minmax(150px, 30%) auto;
-	grid-template-columns: 1.2fr 2fr;
+	grid-template-columns: 30vmin 2fr;
 	/* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
 	grid-template-rows: 40vmin auto;
+	grid-template-rows: repeat(2, min-content);
 
 	position: relative;
-	left: 2rem;
+	left: 6vh;
 	height: 100%;
 
-	padding: 1rem;
+	padding: 2.5rem;
 
 	border-radius: 10px;
 	background-color: rgba(255, 255, 255, 0.2);
@@ -118,11 +122,11 @@
 }
 
 .header__pipesImage {
-	background: url(../assets/img/pipes.jpg);
+	/* background: url(../assets/img/pipes.jpg);
 	background-size: cover;
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center; */
 	/* max-width: 35%; */
 
 	border-radius: 0.5rem;
@@ -171,12 +175,17 @@
 .header__grid h3 {
 	/* padding: 0.3rem; */
 	font-size: 0.7rem;
+	font-size: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
 	grid-column: span 2;
 	/* padding: 0.5rem; */
 	justify-self: center;
 	text-align: center;
 }
 .header__titles {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1rem;
 	& hr {
 		display: block;
 		height: 2px;
