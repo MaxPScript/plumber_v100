@@ -5,66 +5,57 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link rel="stylesheet" href="style.css" />
-		<script src="node_modules/gridstack/dist/gridstack-all.js"></script>
-		<link
+		<!-- <script src="node_modules/gridstack/dist/gridstack-all.js"></script> -->
+		<!-- <link
 			href="node_modules/gridstack/dist/gridstack.min.css"
 			rel="stylesheet"
-		/>
+		/> -->
 	</head>
 	<body>
-		<div class="my-flex-cont1">
-			<div class="my-flex-box" style="text-align: center">
-				<img
-					class="aligncenter wp-image-42"
-					src="https://ytropa.ru/wp-content/uploads/2023/11/1954-300x225.jpg"
-					alt=""
-					width="400"
-					height="300"
-				/>
-			</div>
-			<div class="my-flex-box">
-				<img
-					class="size-medium wp-image-43 aligncenter"
-					src="https://ytropa.ru/wp-content/uploads/2023/11/a-vot-mne-tri-goda.-vsjo-eshhjo-vperedi.-znal-by-chto-vsjo-ravno-by-ulybalsja.-jeto-u-nas-familnoe._obrabotano-300x295.jpg"
-					alt=""
-					width="700"
-					height="995"
-				/>
-
-				Здесь мне три года
-			</div>
-			<div class="my-flex-box">
-				<img
-					class="aligncenter wp-image-46"
-					src="https://ytropa.ru/wp-content/uploads/2023/11/na-lyzhnoj-progulke.-1957jpg-300x207.jpg"
-					alt=""
-					width="434"
-					height="300"
-				/>
-			</div>
-			<div class="my-flex-box">
-				<img
-					class="aligncenter wp-image-45"
-					src="https://ytropa.ru/wp-content/uploads/2023/11/moj-djadja-misha-8-go-maja-1945-goda-shjol-po-berlinu-i-uvidel-staruju-slomannuju-raskladushku.-otpilil-ot-nejo-trubku-prodelal-v-nej-dyrochki-i-vstavil-mundshtuk-poluchilas-dudka-300x293.jpg"
-					alt=""
-					width="307"
-					height="300"
-				/>
-
-				Мой дядя Миша 8-го мая 1945 года шёл по Берлину и увидел старую
-				сломанную раскладушку. Отпилил от неё трубку, проделал в ней дырочки и
-				вставил мундштук, получилась дудка
-			</div>
-			<div class="my-flex-box">
-				<img
-					class="wp-image-44 aligncenter"
-					src="https://ytropa.ru/wp-content/uploads/2023/11/a-mne-tut-7-let-i-jeto-moja-dudka._obrabotano-300x172.jpg"
-					alt=""
-					width="524"
-					height="300"
-				/>
-			</div>
-		</div>
+		<p class="desc">
+			Здравствуйте уважаемые форумчане. Изучая css, нашел одно меню, которое
+			пытаюсь оформить под себя. Соответственно столкнулся с такой проблемой:
+			мне необходимо заменить стандартные классы и добавить свои для подменю, но
+			я никак не пойму, что мне нужно изменить в JavaScript, чтобы меню работало
+			как положено, т.е. открывались списки (ниже наведу пример стандартного
+			меню и моего измененного) Второе - при нажатии на один раскрывающийся
+			список, второй (который был открыт до - автоматически сворачивается, но
+			такой эффект не работает для подменю, нужно добавить эффект сворачивания
+			для подменю) В Яваскрипт я вообще ничего не понимаю, сейчас на стадии
+			изучения CSS, поэтому буду крайне признателен добрым людям, которые мне
+			помогут изменить данное меню, и объяснят где в данном скрипте находится
+			название класса, отвечающее за открывание и закрывание меню. Благодарю за
+			внимание. Оригинальное меню:
+		</p>
+		<ul class="menu">
+			<li class="list">
+				<a href="#">Категория 1</a>
+				<ul class="items">
+					<li><a href="#"> Ссылка 1</a></li>
+					<li><a href="#"> Ссылка 2</a></li>
+					<li><a href="#"> Ссылка 3</a></li>
+				</ul>
+			</li>
+			<li class="list">
+				<a href="#">Категория 2</a>
+				<ul class="items">
+					<li class="list">
+						<a href="#">Подменю 1</a>
+						<ul class="items">
+							<li><a href="#"> Ссылка 1</a></li>
+							<li><a href="#"> Ссылка 2</a></li>
+						</ul>
+					</li>
+					<li class="list">
+						<a href="#">Подменю 2</a>
+						<ul class="items">
+							<li><a href="#"> Ссылка 1</a></li>
+							<li><a href="#"> Ссылка 2</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
 	</body>
 	<script src="./cyber.js"></script>
 </html>

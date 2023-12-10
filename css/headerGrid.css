@@ -94,18 +94,18 @@
 }
 .header__grid {
 	grid-row: 2/3;
-	max-width: 80%;
+	max-width: 70%;
 	display: grid;
 	gap: 2rem;
 	grid-template-columns: minmax(150px, 30%) auto;
-	grid-template-columns: 30vmin 2fr;
+	grid-template-columns: 33vmin 2fr;
 	/* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
 	grid-template-rows: 40vmin auto;
 	grid-template-rows: repeat(2, min-content);
 
 	position: relative;
 	left: 6vh;
-	height: 100%;
+	/* height: 70vh; */
 
 	padding: 2.5rem;
 
@@ -136,7 +136,7 @@
 	position: relative;
 	overflow: hidden;
 
-	grid-row: 1 / 3;
+	/* grid-row: 1 / 3; */
 	aspect-ratio: 1/1;
 }
 .header__pipesImage img {
@@ -168,7 +168,9 @@
 	font-size: 2.625rem;
 	for mobile 2.0625rem
 	*/
-	font-size: clamp(2.0625rem, 1.7707rem + 0.8652vw, 2.625rem);
+	font-size: clamp(28.8px, 14.4px + 1vw, 38.4px);
+	font-size: clamp(1.8rem, 0.7rem + 2.2vw, 2.4rem);
+	/* font-size: clamp(1.8rem, 1.2707rem + 0.6652vw, 2.625rem); */
 	/* padding: 0.5rem 0; */
 	text-shadow: 0 1px hsl(200 50% 1% / 1);
 }

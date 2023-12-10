@@ -1,46 +1,21 @@
 log = console.log;
 log("text.txt");
 
-// document.addEventListener("DOMContentLoaded", function () {
-// 	const dataList = document.getElementById("data-list");
+const list = document.querySelectorAll(".list");
 
-// 	fetch("./text.txt")
-// 		.then((response) => response.json())
-// 		.then((data) => {
-// 			data.forEach((item) => {
-// 				const listItem = document.createElement("li");
-// 				listItem.textContent = `ID: ${item.id}, Name: ${item.name}`;
-// 				dataList.appendChild(listItem);
-// 			});
-// 		})
-// 		.catch((error) => {
-// 			console.error("Error fetching data:", error);
-// 		});
-// });
-
-// document.addEventListener("DOMContentLoaded", function () {
-// 	const dataContainer = document.getElementById("dataContainer");
-
-// 	fetch("text.txt")
-// 		.then((response) => {
-// 			if (!response.ok) {
-// 				throw new Error("Network response was not ok");
-// 			}
-// 			return response.text();
-// 		})
-// 		.then((data) => {
-// 			dataContainer.textContent = data;
-// 		})
-// 		.catch((error) => {
-// 			console.error(
-// 				"There has been a problem with your fetch operation:",
-// 				error
-// 			);
-// 		});
-// });
-var items = [
-	{ content: "my first widget" },
-	{ x: 0, y: 0, content: "my last widget" },
-];
-var grid = GridStack.init();
-grid.load(items);
+function accordion(e) {
+	e.stopPropagation();
+	if (this.classList.contains("active")) {
+		this.classList.remove("active");
+	} else if (this.parentElement.parentElement.classList.contains("active")) {
+		this.classList.add("active");
+	} else {
+		for (i = 0; i < list.length; i++) {
+			list[i].classList.remove("active");
+		}
+		this.classList.add("active");
+	}
+}
+for (i = 0; i < list.length; i++) {
+	list[i].addEventListener("click", accordion);
+}
