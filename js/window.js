@@ -6,7 +6,7 @@ window.addEventListener("load", (e) => {
 	// const height = styles.getPropertyValue("height");
 	const output = document.querySelector(".windowWidthAndHeight");
 	output.innerText = `window height: ${window.innerHeight} 
-    width: ${window.innerWidth}`;
+    window width: ${window.innerWidth}`;
 	// output.innerText = `window width: ${window.innerWidth}`;
 });
 window.addEventListener("resize", (e) => {
@@ -15,6 +15,6 @@ window.addEventListener("resize", (e) => {
 	// const height = styles.getPropertyValue("height");
 	const output = document.querySelector(".windowWidthAndHeight");
 	output.innerText = `window height: ${window.innerHeight} 
-    width: ${window.innerWidth}`;
+    window width: ${window.innerWidth}`;
 	// output.innerText = `window width: ${window.innerWidth}`;
 });
