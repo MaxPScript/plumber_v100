@@ -16,17 +16,13 @@ window.addEventListener("resize", (e) => {
 });
 
 window.addEventListener("scroll", (e) => {
-	// let scrollY = window.scrollY;
 	let nav = document.querySelector(".navbar");
-	// nav.style.top = `${getWindowScrollY()}px`;
 	if (getWindowScrollY() > 100) {
-		// nav.classList.remove("opacity_1");
-		nav.classList.add("opacity_0");
+		// nav.classList.add("opacity_0");
 	} else {
-		nav.classList.remove("opacity_0");
-		// nav.classList.add("opacity_1");
+		// nav.classList.remove("opacity_0");
 	}
 });
 function getWindowScrollY() {
-	return window.scrollY;
+	// return window.scrollY;
 }
