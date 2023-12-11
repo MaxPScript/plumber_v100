@@ -20,6 +20,13 @@
 	padding: 0.5rem; /* Optional: Add padding for content inside the container */
 	filter: brightness(1.2);
 }
+.navbar__info {
+	position: absolute;
+	right: 0;
+	display: grid;
+	padding: 1rem;
+	border: 2px solid orange;
+}
 .navbar__logo {
 	/* position: relative; */
 	display: grid;
@@ -133,7 +140,7 @@
 	font-size: 1.2rem;
 	padding: 0.5rem;
 	text-shadow: 0 1px hsl(200 50% 1% / 1);
-	letter-spacing: 1px;
+	/* letter-spacing: 1px; */
 }
 .header__grid h3 {
 	padding: 0.3rem;
