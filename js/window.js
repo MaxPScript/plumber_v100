@@ -8,7 +8,7 @@ window.addEventListener("load", (e) => {
 	// const output = document.querySelector(".windowWidthAndHeight");
 	output.innerText = `window height: ${window.innerHeight} 
     window width: ${window.innerWidth}
-	devicePixelRatio: ${window.devicePixelRatio}`;
+	devicePixelRatio: ${window.devicePixelRatio.toFixed(2)}`;
 	// output.innerText = `window width: ${window.innerWidth}`;
 });
 window.addEventListener("resize", (e) => {
@@ -18,7 +18,7 @@ window.addEventListener("resize", (e) => {
 	// const output = document.querySelector(".windowWidthAndHeight");
 	output.innerText = `window height: ${window.innerHeight} 
     window width: ${window.innerWidth}
-	devicePixelRatio: ${window.devicePixelRatio}`;
+	devicePixelRatio: ${window.devicePixelRatio.toFixed(2)}`;
 	// output.innerText = `window width: ${window.innerWidth}`;
 });
 
@@ -41,7 +41,7 @@ const updatePixelRatio = () => {
 	// output.textContent += ` devicePixelRatio: ${window.devicePixelRatio}`;
 	output.innerText = `window height: ${window.innerHeight} 
     window width: ${window.innerWidth}
-	devicePixelRatio: ${window.devicePixelRatio}`;
+	devicePixelRatio: ${window.devicePixelRatio.toFixed(2)}`;
 };
 
 updatePixelRatio();
