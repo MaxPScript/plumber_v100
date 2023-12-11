@@ -34,6 +34,7 @@ const updatePixelRatio = () => {
 	const mqString = `(resolution: ${window.devicePixelRatio}dppx)`;
 	const media = matchMedia(mqString);
 	media.addEventListener("change", updatePixelRatio);
+	log(media);
 	remove = () => {
 		media.removeEventListener("change", updatePixelRatio);
 	};
