@@ -1,5 +1,5 @@
 log = console.log;
-
+// dir = console.dir;
 window.addEventListener("load", (e) => {
 	const navbar = document.querySelector(".navbar");
 	const styles = window.getComputedStyle(navbar);
