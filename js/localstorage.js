@@ -24,8 +24,8 @@ for (let i = 0, j = 0; i < landscape.length; i++) {
 		j = i;
 	}
 }
-widths = widths.filter((a) => a <= 1400);
-widths.sort((a, b) => b - a);
+// widths = widths.filter((a) => a <= 1400);
+// widths.sort((a, b) => b - a);
 log(widths);
 
 for (let i = 0, j = 0; i <= landscape.length; i++) {
@@ -42,10 +42,10 @@ for (let i = 0, j = 0; i <= landscape.length; i++) {
 		j = i;
 	}
 }
-heights = heights.filter((a) => a <= 1400);
-heights = heights.slice(heights.length - widths.length);
+// heights = heights.filter((a) => a <= 1400);
+// heights = heights.slice(heights.length - widths.length);
 
-heights.sort((a, b) => b - a);
+// heights.sort((a, b) => b - a);
 
 log(heights);
 
@@ -59,6 +59,10 @@ for (i = 0; i < widths.length; i++) {
 	// }
 }
 log(aspectRatio);
+aspectRatio.sort((a, b) => a - b);
+log(aspectRatio);
+setAspectRatio = new Set(aspectRatio);
+log(setAspectRatio);
 // ASPECT RATIO
 
 // VISUALISATION
