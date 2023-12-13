@@ -1,11 +1,18 @@
 log = console.log;
 // dir = console.dir;
 window.addEventListener("load", (e) => {
+	const html = document.querySelector("html");
+	const htmlStyles = window.getComputedStyle(html);
+	const htmlFontSize = htmlStyles.getPropertyValue("font-size");
+
 	const navbar = document.querySelector(".navbar");
-	const styles = window.getComputedStyle(navbar);
-	const height = styles.getPropertyValue("height");
+	const navbarStyles = window.getComputedStyle(navbar);
+	const height = navbarStyles.getPropertyValue("height");
+
 	const output = document.querySelector(".navbar--height");
-	output.innerText = `nav height: ${height}`;
+	output.innerText = `nav height: ${height}
+	html font-size: ${htmlFontSize}
+	`;
 });
 window.addEventListener("resize", (e) => {
 	const navbar = document.querySelector(".navbar");
