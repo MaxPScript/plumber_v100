@@ -1,30 +1,45 @@
-.services {
+.section {
+	background: hsl(229 64% 9% / 1);
+}
+.services__details,
+.reviews__details {
+	display: flex;
+	/* border: 2px solid orangered; */
+	padding: 1rem;
+}
+.services,
+.reviews {
 	/* background: hsl(209, 53%, 25%);
 	background: hsl(228, 65%, 9%); */
 	display: grid;
 	place-content: center;
 	padding-top: 1rem;
 }
-.services h2 {
+.services h2,
+.reviews h2 {
 	/* margin-bottom: 1rem;
 	margin-left: 10%; */
 	text-align: center;
 }
-.services__details {
+.services__details,
+.reviews__details {
 	/* display: flex; */
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	/* width: min-content; */
-	width: 80%;
-	min-height: 70vh;
+	width: 90%;
+	/* min-height: 70vh; */
+	height: auto;
 	margin: auto;
+	gap: 0.5rem;
 }
-.services__details > div {
+.services__details > div,
+.reviews__details > div {
 	border: 0.2rem solid white;
 	border: 0.2rem solid hsl(64, 40%, 80%);
 	padding: 1rem;
 	display: flex;
-	gap: 0.5rem;
+	gap: 1rem;
 	flex-direction: column;
 	/* justify-content: space-evenly; */
 	flex-basis: fit-content;
@@ -33,28 +48,18 @@
 	/* overflow: hidden; */
 
 	/* background: #000; */
+	background: linear-gradient(90deg, #2d7696, transparent);
 }
 
-.services__details > div > *:first-child {
-	/* flex-basis: 25%; */
-	/* flex-grow: 1; */
-	/* flex-shrink: 0; */
-	/* border-bottom: 0.8rem solid white; */
-	/* text-align: center; */
-	/* display: grid; */
-	/* place-items: center; */
-	/* align-content: center; */
-	/* padding-bottom: 1rem;
-	max-height: 25%;
-	overflow: hidden; */
-	/* position: relative; */
-}
-.services__details > div > h3 {
+.services__details > div > h3,
+.reviews__details > div > h3 {
 	text-align: center;
 }
-.services__details > div > p {
-	flex: 1 0 75%;
+.services__details > div > p,
+.reviews__details > div > p {
+	flex: 1 0 auto;
 	text-align: center;
+	margin-bottom: 3rem;
 	/* content: ""; */
 	/* position: absolute; */
 	/* width: 100%; */
@@ -65,14 +70,9 @@
 	/* border-top: 2rem solid green; */
 	/* display: block; */
 }
-.services__details > div > *:nth-child(3) {
-	/* flex-basis: 100%; */
-	/* text-align: center; */
-	/* flex-grow: 0; */
-	/* border-bottom: 1px solid white;
-	padding-bottom: 1rem; */
-}
-.services__details > div > div {
+
+.services__details > div > div,
+.reviews__details > div > div {
 	/* flex-basis: 25%; */
 	/* align-self: center; */
 	width: 0%;
@@ -86,6 +86,7 @@
 	border-top: 2rem solid hsl(64, 40%, 80%);
 }
 
-.services__details > div:not(:last-child) {
+.services__details > div:not(:last-child),
+.reviews__details > div:not(:last-child) {
 	border-right: none;
 }

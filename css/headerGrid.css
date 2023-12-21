@@ -261,11 +261,3 @@
 		transform: scale(1.04);
 	}
 }
-.section {
-	background: hsl(229 64% 9% / 1);
-}
-.services__details {
-	display: flex;
-	border: 2px solid orangered;
-	padding: 1rem;
-}
